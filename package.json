@@ -14,7 +14,7 @@
   "scripts": {
     "clean:reports": "rm -rf cypress/reports/*",
     "generate:html": "marge cypress/reports/*.json -o cypress/reports/html --inline",
-    "test:all": "npm run clean:reports && cypress run --browser chrome; npm run generate:html || true",
+    "test:all": "npm run clean:reports && cypress run --browser chrome; npm run generate:html",
     "test:smoke": "npm run clean:reports && cypress run --env tags=@smoke --browser chrome; npm run generate:html || true"
 }
 }
